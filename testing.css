@@ -1,0 +1,38 @@
+#typediv {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.console {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+}
+
+#items {
+    width: 50%;
+    margin-left: 25%;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    button {
+        margin-bottom: 15px;
+    }
+} 
+
+#clear {
+    margin-left: 25%;
+    margin-bottom: 0px;
+    width: 50%;
+}
