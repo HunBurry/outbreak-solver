@@ -3,6 +3,22 @@
     width: 50%;
 }
 
+#void {
+    background-color: purple;
+}
+
+#solar {
+    background-color: rgb(245, 123, 41);
+}
+
+#void2 {
+    background-color: purple;
+}
+
+#solar2 {
+    background-color: rgb(245, 123, 41);
+}
+
 .console {
     margin-left: 25%;
     width: 50%;
@@ -25,9 +41,23 @@ button {
     margin-bottom: 15px;
 }
 
+.short {
+    display: none;
+}
+
+p {
+    text-align: center;
+}
 @media only screen and (max-width: 768px) {
     button {
         margin-bottom: 15px;
+    }
+    .short { 
+        display: inline-block;
+        text-align: center; 
+    }
+    .full { 
+        display: none;
     }
 } 
 
