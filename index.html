@@ -21,9 +21,9 @@
 
         <meta name="keywords" content="destiny, destiny2, destiny 2, destiny the game, outbreak perfected, void configuration, solar configuration, arc configuration, zero hour heroic" />
 
-        <script src="outbreak.js" type="text/javascript"></script>
+        <script src="testing.js" type="text/javascript"></script>
 
-        <link rel="stylesheet" type="text/css" href="outbreak.css">
+        <link rel="stylesheet" type="text/css" href="testing.css">
 
         <script src="https://www.w3counter.com/tracker.js?id=126055"></script>
 
@@ -31,15 +31,24 @@
 
     </head>
 
-    <body> <div class="container">
+    <body> <div id="main"> <div class="container"> 
 
-            <div class="h1 title"> Select a Configuration </div> 
+            <div class="h1 title full"> Select a Configuration </div> 
+            <div class="h1 title short col-md-2 col-md-offset-5"> Select a Config </div> 
     
-            <div id="typeDiv" class="btn-group form-row text-center">
+            <div id="typeDiv" class="btn-group form-row text-center full">
+                    <div class="col-12">
+                    <button id="void" class="btn btn-primary types">Void Configuration</button>
+                    <button id="solar" class="btn btn-primary types">Solar Configuration</button>
+                    <button id="arc" class="btn btn-primary types">Arc Configuration</button>
+                    </div>
+                </div>
+
+            <div id="typeDiv" class="btn-group form-row text-center short">
                 <div class="col-12">
-                <button type="button" id="void" default="true" class="btn btn-primary types">Void Configuration</button>
-                <button type="button" id="solar" class="btn btn-primary types">Solar Configuration</button>
-                <button type="button" id="arc" class="btn btn-primary types">Arc Configuration</button>
+                <button id="void2" class="btn btn-primary types">Void</button>
+                <button id="solar2" class="btn btn-primary types">Solar</button>
+                <button id="arc2" class="btn btn-primary types">Arc</button>
                 </div>
             </div>
 
@@ -51,30 +60,28 @@
 
     <form>
 
-    
-
         <div class="input-group mb-3 console">
             <div class="input-group-prepend">
             <span class="input-group-text">Console 1</span>
             </div>
-            <input type="number" id="console1num1" class="form-control" placeholder="0" max="12" min="1">
-            <input type="number" id="console1num2" class="form-control" placeholder="0" max="12" min="1">
+            <input type="tel" pattern="[0-9]*" id="console1num1" class="form-control" placeholder="0" max="12" min="1">
+            <input type="tel" pattern="[0-9]*" id="console1num2" class="form-control" placeholder="0" max="12" min="1">
         </div>
 
         <div class="input-group mb-3 console">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Console 2</span>
                 </div>
-                <input type="number" id="console2num1" class="form-control" placeholder="0" max="12" min="1">
-                <input type="number" id="console2num2" class="form-control" placeholder="0" max="12" min="1">
+                <input type="tel" pattern="[0-9]*" id="console2num1" class="form-control" placeholder="0" max="12" min="1">
+                <input type="tel" pattern="[0-9]*" id="console2num2" class="form-control" placeholder="0" max="12" min="1">
             </div>
 
         <div class="input-group mb-3 console">
             <div class="input-group-prepend">
                 <span class="input-group-text">Console 3</span>
             </div>
-            <input type="number" id="console3num1" class="form-control" placeholder="0" max="12" min="1">
-            <input type="number" id="console3num2" class="form-control" placeholder="0" max="12" min="1">
+            <input type="tel" pattern="[0-9]*" id="console3num1" class="form-control" placeholder="0" max="12" min="1">
+            <input type="tel" pattern="[0-9]*" id="console3num2" class="form-control" placeholder="0" max="12" min="1">
         </div>
 
         <button type="button" id="clear" default="true" class="btn btn-primary types">Clear Inputs</button>
@@ -87,13 +94,16 @@
 
         <div class="h1 title">  Possible Locations </div> 
 
-    <br> 
+        <p> Please click on the loction after to remove it from the possible list of rooms. </p>
 
     <ul id="items" class="list-group">
 
     </ul>
 
     </div>
+
+    </div>
+    
 </body>
 
 </html>
